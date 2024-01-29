@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header section start from here  */
+.navbar {
+    background-color: #270082;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+    padding-left: 35px;
+}
+
+.navbar a:hover {
+    color: #fff !important;
+}
+
+.collapse {
+    justify-content: end !important;
+}
+.collapse ul {
+    gap: 40px;
+    margin-right: 40px;
+}
+
+.collapse ul li a {
+    color: #fff !important;
+    padding: 1px 10px;
+    
+}
+.collapse ul li {
+    border-bottom: 2px solid transparent !important;
+    transition: 0.2s ease-in !important;
+}
+.collapse ul li:hover {
+    border-bottom: 2px solid #fff !important;
+    transition: 0.2s ease-in !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background: none;
+}
+.navbar .navbar-toggler span {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header section end here  */
+
+/* banner section css start from here  */
+.banner {
+    background-image: url(../images/hero_image.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner .banner_heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 35vh;
+    width: 50%;
+    margin: auto;
+    gap: 25px;
+}
+
+.banner .banner_heading h1 {
+    font-size: 45px;
+}
+
+.banner .banner_heading span {
+    font-size: 17px;
+}
+
+.banner .banner_heading p {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .banner {
+        width: 100%;
+    }
+
+    .banner .banner_heading {
+        width: auto;
+    }
+}
+
+/* banner section css end here  */
+
+/* music section css start from here  */
+.music {
+    height: 100vh;
+    background-color: #281154;
+}
+
+.music .music_heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    width: 60%;
+    margin: auto;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.music .music_heading h1 {
+    font-size: 30px;
+}
+
+.music .music_heading span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.music .music_heading p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.music .trial_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.music .trial_btn a {
+    color: #fff;
+    padding: 15px 15px;
+    background: #DC0000;
+    text-decoration: none;
+    display: block;
+}
+
+.music .trial_btn a:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.music .orange_music {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.music .orange_music span {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.music .ipad_img {
+    display: flex;
+    justify-content: center;
+}
+
+.music {
+    scroll-margin: 50px;
+}
+
+@media(max-width:768px) {
+    .music .ipad_img img {
+        width: 100%;
+    }
+}
+
+/* music section css end here  */
+
+/* collection section css strart from here  */
+.collection_sect {
+    padding-top: 430px;
+}
+
+.collection_sect .collection_info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    gap: 30px;
+}
+
+.collection_sect .collection_info span {
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.collection_sect .collection_info p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.collection_sect .readmore_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.collection_sect .readmore_btn a {
+    padding: 10px 10px;
+    background-color: #270082;
+    color: #fff;
+    text-decoration: none;
+}
+
+.collection_sect .readmore_btn a:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.collection_sect .macbook {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:786px) {
+    .collection_sect .macbook img {
+        width: 100%;
+    }
+}
+
+/* collection section css end here  */
+
+/* video section css start from here */
+.video {
+    height: 100vh;
+    background: url(../images/video.png);
+    background-size: cover;
+}
+
+.video .video_info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    gap: 30px;
+}
+
+.video .video_info span {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 40vh;
+}
+
+.video .video_info p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* video section css end here  */
+
+/* gift card css section start from here  */
+.gift_cards {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    gap: 20px;
+    padding: 70px 0px;
+}
+
+.gift_cards .gift_card_info h2 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.gift_cards .gift_card_info p {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 300;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.gift_cards .gift_card_info span {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.gift_cards .gift_card_info .blank_line {
+    border: 1px #00000081 solid;
+    opacity: 0.5;
+    margin: 25px 0px;
+}
+
+.gift_cards .gift_card_info .redeem_btn a {
+    color: #fff;
+    background-color: #270082;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+.gift_cards .gift_card_info .redeem_btn a:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+@media(max-width:768px){
+    .gift_cards{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .gift_cards .gift_card_img img {
+        width: 100%;
+    }
+    .gift_cards .gift_card_info {
+        width: 100%;
+    }
+}
+/* gift card css section end here  */
+
+/* footer css section start from here  */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1B0058;
+}
+
+.footer .roww {
+    padding: 50px 0px;
+}
+
+.footer .roww .row_blank_line {
+    border: 0.5px #fff solid;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+.footer .roww .heading h2 {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.footer .roww .items ul li {
+    list-style-type: none;
+}
+
+.footer .roww .items ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer .roww .items ul li a:hover {
+    opacity: 0.6;
+    transition: 0.2s ease-in;
+}
+/* @media(max-width:768px){
+    .footer {
+        
+    }
+} */
+
+/* footer css section end here  */
+
+/* copy right section css start from here  */
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #270082;
+    padding: 20px 0px;
+}
+
+.copyright span {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+/* copy right section css end here  */
